@@ -62,4 +62,18 @@ public class IfElseTest {
         }
         return -1;
     }
+    //寻找0·100之间能被7整除的数之和与总数
+    public void testContinue(){
+        int total=0;
+        int count=0;
+        for(int n=0;n<=100;n++){
+            if(n%7!=0){
+                continue;
+            }
+            System.out.println(n+"可被7整除");
+            total=total+n;
+            count++;
+        }
+        System.out.println("0~100之间共"+count+"个数可被7整除，且累计和为"+total);
+    }
 }
