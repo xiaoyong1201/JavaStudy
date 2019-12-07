@@ -1,6 +1,7 @@
 package com.zeroten.flow;
 
 public class IfElseTest {
+    //回文数检验
     public boolean isPalindrom(int x) {
         boolean isPalindromeNumber = false;
         StringBuilder sb = new StringBuilder();
@@ -18,4 +19,21 @@ public class IfElseTest {
         }
         return isPalindromeNumber;
     }
+//根据年龄判断所属年龄段
+    public String getAgeGroup(int age){
+        String ageGroup=null;
+        if(age<7){
+            ageGroup="儿童";
+        }else if(age<18){
+            ageGroup="少年";
+        }else if(age<41){
+            ageGroup="青年";
+        }else if(age<60){
+            ageGroup="中年";
+        }else {
+            ageGroup="老年";
+        }
+        return ageGroup;
+    }
+
 }
