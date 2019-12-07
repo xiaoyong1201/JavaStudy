@@ -1,5 +1,7 @@
 package com.zeroten.flow;
 
+import java.util.Random;
+
 public class IfElseTest {
     //回文数检验
     public boolean isPalindrom(int x) {
@@ -35,5 +37,20 @@ public class IfElseTest {
         }
         return ageGroup;
     }
+//1000以内的一个随机数是否被30整除
+    public void isToBeDivisible(){
+        int total=0;
+        while(true){
+            int i=new Random().nextInt(1000);
+            if(30%i==0){
+                System.out.println(i+"被30整除");
+                break;
+            }else {
+                System.out.println(i+"不能被30整除");
+                total++;
+            }
+        }
+        System.out.println("随机产生"+total+"个不被30整除的数");
 
+    }
 }
