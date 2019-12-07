@@ -47,5 +47,18 @@ public void testgetAgeGroup(){
     }
   System.out.println(age+"岁，属于"+ageGroup);
 }
-
+//找出 0~n2之间除以n1余7的最大数，并返回该数
+    int getMacNumRem7(int n1, int n2){
+        for(int n=n2;n>=0;n--){
+            if(n%n1==7) {
+                return n;
+            }
+        }
+        return -1;
+    }
+    @Test
+    public void testgetMacNumRem7(){
+        int i=getMacNumRem7(9,17);
+        System.out.println(i);
+    }
 }

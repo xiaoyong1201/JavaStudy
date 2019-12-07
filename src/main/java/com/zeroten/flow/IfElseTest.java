@@ -53,4 +53,13 @@ public class IfElseTest {
         System.out.println("随机产生"+total+"个不被30整除的数");
 
     }
+    //找出 0~n2之间除以n1余7的最大数，并返回该数
+    public int getMacNumRem7(int n1, int n2){
+        for(int n=n2;n>=0;n--){
+            if(n%n1==7) {
+                return n;
+            }
+        }
+        return -1;
+    }
 }
